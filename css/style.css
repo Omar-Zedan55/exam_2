@@ -1,0 +1,190 @@
+body {
+    background: #000;
+}
+
+.nav-list li {
+    display: none;
+    cursor: pointer;
+    ;
+}
+
+.sidebar {
+    position: fixed;
+    z-index: 200;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 250px;
+    background: #0D0D0D;
+}
+
+.sidebar-shown-part {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    bottom: 0;
+    width: 70px;
+    background: #ffffff;
+}
+
+.sidebar li h4 {
+    color: white;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.fa-bars,
+.fa-x {
+    font-size: 35px;
+    color: #000;
+}
+
+.ingedients-site .inner,
+.Area-site .inner {
+    color: white;
+    cursor: pointer;
+    padding-bottom: 20px;
+}
+
+.sidebar-shown-part .fa-globe,
+.fa-share-nodes {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #000;
+}
+
+.fa-house-laptop {
+    font-size: 60px;
+}
+
+.sidebar i {
+    cursor: pointer;
+
+}
+
+.inner {
+    cursor: pointer;
+}
+
+.layer {
+    opacity: .82;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: all .5s;
+    transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -o-transform: translateY(100%);
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+
+.foodtitle h3 {
+    color: #000;
+    font-size: 30px;
+}
+
+.inner:hover .layer {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+}
+
+@media (min-width: 1400px) {
+    .search-site-container {
+        max-width: 1140px;
+    }
+}
+
+::placeholder {
+    color: gray !important;
+}
+
+.search-site .sitebody {
+    margin-top: 60px;
+}
+
+.fa-drumstick-bite {
+    font-size: 55px;
+}
+
+.Recipes {
+    margin-right: 15px;
+    margin-bottom: 12px;
+    display: flex;
+    float: left;
+    color: #000;
+    font-size: 16px;
+    padding: 7px;
+    font-weight: 400;
+    background: #CFF4FC;
+}
+
+.clr {
+    clear: left;
+}
+
+.tags {
+    margin-right: 15px;
+    margin-bottom: 12px;
+    display: flex;
+    float: left;
+    color: #000;
+    font-size: 16px;
+    padding: 7px;
+    font-weight: 400;
+    background: #F8D7DA;
+}
+
+.loader-div{
+    background-color: rgba(0, 0, 0,.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+}
+.loader {
+    width: 100px;
+    aspect-ratio: 1;
+    display: grid;
+    -webkit-mask: conic-gradient(from 15deg, #0000, #000);
+    animation: l26 1s infinite steps(12);
+}
+
+.loader,
+.loader:before,
+.loader:after {
+    background:
+        radial-gradient(closest-side at 50% 12.5%,
+            #ffffff 96%, #0000) 50% 0/20% 80% repeat-y,
+        radial-gradient(closest-side at 12.5% 50%,
+            #ffffff 96%, #0000) 0 50%/80% 20% repeat-x;
+}
+
+.loader:before,
+.loader:after {
+    content: "";
+    grid-area: 1/1;
+    transform: rotate(30deg);
+}
+
+.loader:after {
+    transform: rotate(60deg);
+}
+
+@keyframes l26 {
+    100% {
+        transform: rotate(1turn)
+    }
+}
